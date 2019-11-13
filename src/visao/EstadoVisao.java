@@ -98,6 +98,12 @@ public class EstadoVisao extends javax.swing.JDialog {
             }
         });
 
+        cNome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cNomeActionPerformed(evt);
+            }
+        });
+
         btSalvar.setText("Salvar");
         btSalvar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -328,6 +334,10 @@ public class EstadoVisao extends javax.swing.JDialog {
     private void cCodigoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cCodigoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cCodigoActionPerformed
+
+    private void cNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cNomeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cNomeActionPerformed
 
     public void montaTabela() {
         listaEstados = HibernateUtil.getSession().

@@ -95,7 +95,6 @@ public class CidadeVisao extends javax.swing.JDialog {
         cEstado = new javax.swing.JComboBox<String>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setFocusableWindowState(false);
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
         jLabel1.setText("Cadastro de Cidade");

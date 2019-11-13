@@ -1,5 +1,7 @@
 package visao;
 
+import javax.swing.WindowConstants;
+
 public class TelaPrincipal extends javax.swing.JFrame {
    
     public TelaPrincipal() {
@@ -116,6 +118,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         CidadeVisao tela = new CidadeVisao(null, true);
         tela.setLocationRelativeTo(null);
         tela.setVisible(true);
+        tela.setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE);
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed

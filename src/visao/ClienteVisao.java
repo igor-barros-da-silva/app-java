@@ -154,6 +154,12 @@ public class ClienteVisao extends javax.swing.JDialog {
 
         jLabel3.setText("Nome:");
 
+        cNome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cNomeActionPerformed(evt);
+            }
+        });
+
         jLabel6.setText("CPF:");
 
         jLabel7.setText("RG:");
@@ -519,6 +525,10 @@ public class ClienteVisao extends javax.swing.JDialog {
     private void cCidadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cCidadeActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cCidadeActionPerformed
+
+    private void cNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cNomeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cNomeActionPerformed
     
     public void montaTabela() {
         listaClientes = HibernateUtil.getSession().
